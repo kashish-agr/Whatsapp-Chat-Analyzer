@@ -65,7 +65,7 @@ def top20(data, selected_user):
     temp = temp[temp['message'] != '<Media omitted>']
 
     # Read stopwords and convert to a list
-    with open(r'E:\Ml_Learning\Whatsapp-chat-Analyzer\Chat Anayser\stop_hinglish.txt', 'r', encoding='utf-8') as f:
+    with open('stop_hinglish.txt', 'r', encoding='utf-8') as f:
         stop_words = f.read().split()  # Splitting creates a list of stopwords
 
     words = []
